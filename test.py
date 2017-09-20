@@ -1,25 +1,23 @@
-
-import os
 import unittest
+import os
+import json
 
 
- 
 class loginRegistrationTests(unittest.TestCase):
- 
-    # executed prior to each test
-    def setUp(self):
-        self.app = app.test_client()
-        db.drop_all()
-        db.create_all()
- 
-    # executed after each test
-    def tearDown(self):
-        pass
- 
-    def test_index_page(self):
-        response = self.client.get('/', follow_redirects=True)
-        self.assertEqual(response.status_code, 200)
- 
- 
+
+		#test if login page is loading
+		def login(self, username, password):
+			return self.app.post('/login', data=dict(username=username,password=password), follow_redirects=True)
+
+		#test if you can log out
+		def logout(self):
+   			 return self.app.get('/logout', follow_redirects=True)
+
+   		def test_correct_login(self):
+			response = self.client.get('/login')
+			self.assertIn(b'you are required to login in', response.date)
+
+
+ # Make the tests executable
 if __name__ == "__main__":
     unittest.main()
