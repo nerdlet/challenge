@@ -4,7 +4,7 @@
 <head>
     <title>Dashboard || Shopping List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="static/dashboard.css">
+    <link rel="stylesheet" href="static/login.css">
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/bootstrap-responsive.css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -28,8 +28,8 @@
             <!--start of nav collapse-->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class=""><a href="index.html" style="color: white;"><span class="glyphicon glyphicon-comment"></span> Home</a></li>
-                     <li class=""><a href="#" style="color: white;"><span class="glyphicon glyphicon-comment"></span> Manage List</a></li>
+                    <li class=""><a href="/" style="color: white;"><span class="glyphicon glyphicon-comment"></span> Home</a></li>
+                     <li class=""><a href="/dashboard" style="color: white;"><span class="glyphicon glyphicon-comment"></span> Manage List</a></li>
                 </ul>
                 <div class="nav navbar-right" style="padding: 8px;">
                     <a href="/" class="btn btn-danger" role="button">Logout</a>
@@ -50,18 +50,18 @@
     </div>
      <!--end of app logo is here -->
 
-   <div class="test " style="align-content: center;padding-top: 2%;padding-left: 30%;padding-right: 30%; ">
+   <div class="container" style="align-content: center;padding-top: 2%;padding-left: 30%;padding-right: 30%; ">
 
         <header>
             <h1 style="text-align: center;">Create Shopping List</h1>
         </header>
 
-        <div class ="right">
+        <div class ="container">
             <div class="formBox">
                     <form action="">
                         <p>Name</p>
-                        <input class="form-control"type="text" name="text" placeholder="Enter Shopping list name">
-                        <input type="submit" href ="/additems" name="submit" value="Save">
+                        <input class="form-control" type="text" name="text" placeholder="Enter Shopping list name">
+                        <input type="submit" href ="/dashboard/savelistname/additems" name="submit" value="Save">
                     </form>
             </div>
         </div>
