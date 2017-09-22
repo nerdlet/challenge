@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/nerdlet/challenge/badge.svg?branch=master)](https://coveralls.io/github/nerdlet/challenge?branch=master)
+[![Build Status](https://travis-ci.org/nerdlet/challenge.svg?branch=master)](https://travis-ci.org/nerdlet/challenge)[![Coverage Status](https://coveralls.io/repos/github/nerdlet/challenge/badge.svg?branch=master)](https://coveralls.io/github/nerdlet/challenge?branch=master)
 
 SETUP CHALLENGE2-FLASK
 
