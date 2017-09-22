@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/nerdlet/challenge/badge.svg?branch=master)](https://coveralls.io/github/nerdlet/challenge?branch=master)
+
 SETUP CHALLENGE2-FLASK
 
 cd into desktop or your preffered download location
